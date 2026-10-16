@@ -1,0 +1,11 @@
+---
+- name: Configure the workshop banner
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+    # Add workshop_message with your group and student code, without your name.
+  tasks: []
+  # Replace [] with an ansible.builtin.copy task for /data/banner.txt.
+  # Set content from workshop_message, mode 0644, owner/group 10001.

@@ -1,0 +1,15 @@
+---
+- name: Demonstrate declarative file management inside the lab volume
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+  tasks:
+    - name: Write a demonstration note
+      ansible.builtin.copy:
+        dest: /data/demo.txt
+        content: "This file is managed by Ansible.\n"
+        mode: "0644"
+        owner: "10001"
+        group: "10001"

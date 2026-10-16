@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+!.env.example
+*.sqlite
+*.sqlite3
+*.tar
+*.zip
+.DS_Store
+Thumbs.db
+.pytest_cache/
+test-results/

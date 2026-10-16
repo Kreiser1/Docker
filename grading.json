@@ -1,0 +1,125 @@
+{
+  "hours": 28,
+  "kt_maxima": {
+    "1": 15,
+    "2": 25,
+    "3": 25,
+    "4": 35
+  },
+  "works": [
+    {
+      "id": "K1-01",
+      "kt": 1,
+      "title": "Путь изменения",
+      "max_points": 3
+    },
+    {
+      "id": "K1-02",
+      "kt": 1,
+      "title": "Linux и диагностика",
+      "max_points": 5
+    },
+    {
+      "id": "K1-03",
+      "kt": 1,
+      "title": "Простой отказ",
+      "max_points": 5
+    },
+    {
+      "id": "K1-04",
+      "kt": 1,
+      "title": "Первая GitHub-сдача",
+      "max_points": 2
+    },
+    {
+      "id": "K2-01",
+      "kt": 2,
+      "title": "Образ и контейнер",
+      "max_points": 4
+    },
+    {
+      "id": "K2-02",
+      "kt": 2,
+      "title": "Свой Dockerfile",
+      "max_points": 7
+    },
+    {
+      "id": "K2-03",
+      "kt": 2,
+      "title": "Compose и сохранность данных",
+      "max_points": 7
+    },
+    {
+      "id": "K2-04",
+      "kt": 2,
+      "title": "Registry",
+      "max_points": 4
+    },
+    {
+      "id": "K2-05",
+      "kt": 2,
+      "title": "Ошибка конфигурации",
+      "max_points": 3
+    },
+    {
+      "id": "K3-01",
+      "kt": 3,
+      "title": "CI/CD и ветки",
+      "max_points": 3
+    },
+    {
+      "id": "K3-02",
+      "kt": 3,
+      "title": "Первый workflow",
+      "max_points": 7
+    },
+    {
+      "id": "K3-03",
+      "kt": 3,
+      "title": "Тестовый барьер",
+      "max_points": 6
+    },
+    {
+      "id": "K3-04",
+      "kt": 3,
+      "title": "Сборка после тестов",
+      "max_points": 6
+    },
+    {
+      "id": "K3-05",
+      "kt": 3,
+      "title": "Разбор лога pipeline",
+      "max_points": 3
+    },
+    {
+      "id": "K4-01",
+      "kt": 4,
+      "title": "Логи и доступность",
+      "max_points": 6
+    },
+    {
+      "id": "K4-02",
+      "kt": 4,
+      "title": "Prometheus и Grafana",
+      "max_points": 8
+    },
+    {
+      "id": "K4-03",
+      "kt": 4,
+      "title": "Ansible и повторный запуск",
+      "max_points": 8
+    },
+    {
+      "id": "K4-04",
+      "kt": 4,
+      "title": "Учебный инцидент",
+      "max_points": 8
+    },
+    {
+      "id": "K4-05",
+      "kt": 4,
+      "title": "Итоговая защита",
+      "max_points": 5
+    }
+  ]
+}
