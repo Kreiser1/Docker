@@ -1,0 +1,9 @@
+```
+root@Kreiser-PC:/mnt/c/Users/Kreiser/Desktop/Docker# docker compose -f compose.student.yaml up -d web
+[+] up 2/2
+ ✔ Container docker-api-1 Healthy                                                                                  14.0s
+ ✔ Container docker-web-1 Started                                                                                  14.9s
+```
+
+![alt text](k2-05-img1.png)
+Ошибка появляется из-за того, что API находится на порте 8080, а страница обращается к 9999.
