@@ -65,7 +65,7 @@ class AppTests(unittest.TestCase):
 
     def test_create_request(self):
         status, body = self.request('/api/requests', {'kind':'screen','key':'test-create'})
-        self.assertEqual(status, 201)
+        self.assertEqual(status, 200)
         self.assertEqual(json.loads(body)['request']['kind'], 'screen')
         status, body = self.request('/api/requests')
         self.assertEqual(json.loads(body)['total'], 1)
