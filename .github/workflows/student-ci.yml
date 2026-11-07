@@ -24,7 +24,4 @@ jobs:
             - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
               with:
                   persist-credentials: false
-            - run: docker compose --profile "*" config --quiet
-            - run: docker build -f docker/bootstrap.Dockerfile -t devops-course:base lab
-            - run: docker build -f docker/tools.Dockerfile -t devops-course-tools:base .
-            - run: docker build -f docker/ansible.Dockerfile -t devops-course-ansible:base .
+            - run: docker build -f lab/Dockerfile -t devops-student:v1 lab
