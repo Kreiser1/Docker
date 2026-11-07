@@ -17,5 +17,14 @@ jobs:
                   python-version: "3.13"
             - run: python --version
             - run: python -m unittest discover -s tests -p test_app.py -v
-            # K3-03: add the command which actually runs tests/test_app.py.
-    # K3-04: add a separate build job, needs: test, checkout and docker build.
+    build:
+        runs-on: ubuntu-latest
+        needs: test
+        steps:
+            - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+              with:
+                  persist-credentials: false
+            - run: docker compose --profile "*" config --quiet
+            - run: docker build -f docker/bootstrap.Dockerfile -t devops-course:base lab
+            - run: docker build -f docker/tools.Dockerfile -t devops-course-tools:base .
+            - run: docker build -f docker/ansible.Dockerfile -t devops-course-ansible:base .
