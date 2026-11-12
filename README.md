@@ -64,4 +64,4 @@
 
 ### [CI](./.github/workflows/student-ci.yml)
 
-### [Исходники](./lab/app.py) -> [Тесты](./tests/test_app.py) -> [Образ](./lab/Dockerfile) -> [Сервис](./compose.student.yaml) -> Сигнал (`docker compose ps`, `GitHub Actions`, `Grafana`) -> Восстановление (`docker compose -f compose.student.yaml up -d`)
+### [Исходники](./lab/app.py) -> [Тесты](./tests/test_app.py) -> [Образ](./lab/Dockerfile) -> [Сервис](./compose.student.yaml) -> Сигнал (`docker compose ps`, `GitHub Actions`, [`Grafana`](./evidence/K4-02-dashboard.json)) -> Восстановление (`docker compose -f compose.student.yaml up -d`)
